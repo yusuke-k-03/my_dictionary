@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+}
+
+.main-bar{
+  background-color: rgb(134, 200, 223);
+  width: 600px;
+  height: 100vh;
+}
+
+.side-bar {
+  background-color: aliceblue;
+  width: calc(100vw - 600px);  
+}

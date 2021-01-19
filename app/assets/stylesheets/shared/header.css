@@ -1,0 +1,32 @@
+.dictionary-icon{
+  width: 100vw;
+  height: 300px;
+}
+
+.line-box{
+  background-color: rgb(130, 212, 233);
+  height: 60px;
+  display: flex;
+}
+
+.line-header{
+  height: 60px;
+  font-size: 20px;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  
+}
+
+.login{
+  text-decoration: none;
+  margin-right: 30px;
+  margin-top: 30px;
+  color: black;
+  justify-items: end;
+}
+
+.sign-up{
+  text-decoration: none;
+  color: black;
+}
