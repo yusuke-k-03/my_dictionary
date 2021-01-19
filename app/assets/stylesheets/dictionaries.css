@@ -2,13 +2,72 @@
   display: flex;
 }
 
-.main-bar{
+
+
+.side-bar{
   background-color: rgb(134, 200, 223);
-  width: 600px;
+  width: 300px;
   height: 100vh;
 }
 
-.side-bar {
+.addition {
+  padding: 60px 0 60px 60px;
+}
+
+.add {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+}
+
+.carender {
+  text-decoration: none;
+  margin-top: 40px;
+}
+
+.main-bar {
   background-color: aliceblue;
-  width: calc(100vw - 600px);  
+  width: calc(100vw - 300px);
+  overflow: scroll;  
+}
+
+.search {
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+}
+
+.search-form {
+  width: 120px;
+  height: 20px;
+  margin: auto;
+}
+
+.dictionary {
+  margin-top: 10px;
+}
+
+.upper-dictionary {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.date-dictionary {
+  color: #999;
+  font-size: 12px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+.category-dictionary {
+  color: black;
+  font-size: 12px;
+  padding-left: 60px;
+}
+
+.title-dictionary {
+  color: black;
+  font-size: 20px;
+  margin-bottom: 40px;
+  margin-left: 40px;
 }
