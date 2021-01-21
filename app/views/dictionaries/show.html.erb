@@ -1,14 +1,23 @@
 <%= render "shared/header" %>
 
 <div class = "top-show">
+<div class = "second-show">
 <div class = "title-show">
 
 <%= @dictionary.title %>
 </div>
-<div class = >
+<div class = "category-show">
 <%= @dictionary.category.name %>
+</div>
+<div class = "text-show">
 <%= @dictionary.text %>
-<%= link_to "編集", "#" %>
-<%= link_to "削除", "#" %>
+</div>
+
+<div class = "change-show">
+
+<%= link_to "編集", edit_dictionary_path, class: "edit-show" %>
+<%= link_to "削除", dictionary_path, method: :delete, class: "delete-show" %>
+</div>
+</div>
 
 </div>

@@ -20,6 +20,25 @@ class DictionariesController < ApplicationController
     @dictionary = Dictionary.find(params[:id])
   end
 
+  def edit
+    @dictionary = Dictionary.find(params[:id])
+  end
+
+  def update
+    @dictionary = Dictionary.find(params[:id])
+    if @dictionary.update(dictionary_params)
+      redirect_to root_path
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    dictionary = Dictionary.find(params[:id])
+    dictionary.destroy
+    redirect_to root_path
+  end
+
 
   private
   
