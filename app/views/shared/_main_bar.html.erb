@@ -1,22 +1,27 @@
 <div calss = "dictionary">
-  <div class = upper-dictionary>
-    <div class = "category-dictionary">
-    HTML
-    </div>
-    <div class = "date-dictionary">
-    2020/1/1
-    </div>
-    <%= link_to "よくわからないけん", "#", class: "title-dictioary" %>
-  </div>
 
 
-    <div class = upper-dictionary>
+  <div class = "lists-dictionary">
+  <div class = "list-dictionary">
+  カテゴリー
+  </div>
+  <div class = "list-dictionary">
+  投稿日時
+  </div>
+  <div class = "list-dictionary">
+  タイトル
+  </div>
+  </div>
+  <div class = "upper-dictionary">
+  <% @dictionaries.each do |dictionary| %>
     <div class = "category-dictionary">
-    Ruby
+    <%= dictionary.category.name %>
     </div>
     <div class = "date-dictionary">
-    2020/1/3
+    <%= dictionary.created_at %>
     </div>
-    <%= link_to "わからんけん", "#", class: "title-dictioary" %>
+    <%= link_to dictionary.title, dictionary_path(dictionary.id), class: "title-dictionary" %>
   </div>
+<% end %>
+ 
 </div>

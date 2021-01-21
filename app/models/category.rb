@@ -15,5 +15,8 @@ class Category < ActiveHash::Base
     { id: 13, name: 'HTML/CSS' },
     { id: 14, name: 'その他' }
   ]
-  end
+
+  include ActiveHash::Associations
+  has_many :dictionaries
+
 end

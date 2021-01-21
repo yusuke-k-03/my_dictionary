@@ -64,6 +64,15 @@
   margin-top: 10px;
 }
 
+.lists-dictionary {
+  display: flex;
+}
+
+.list-dictionary {
+  padding: 30px 30px;
+  font-size: 30px;
+}
+
 .upper-dictionary {
   display: flex;
   margin-bottom: 20px;
@@ -72,14 +81,14 @@
 
 .date-dictionary {
   color: #999;
-  font-size: 12px;
+  font-size: 20px;
   padding-left: 30px;
   padding-right: 40px;
 }
 
 .category-dictionary {
   color: black;
-  font-size: 12px;
+  font-size: 20px;
   padding-left: 60px;
 }
 
