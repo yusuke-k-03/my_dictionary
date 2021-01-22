@@ -1,0 +1,9 @@
+<%= form_with(model: @dictionary, local: true) do |f| %>
+  <div class="article-box">
+    記事を編集する
+    <%= f.text_field :title, class:"title", placeholder:"タイトル" %>
+    <%= f.text_area :text, class:"text", placeholder:"テキスト" %>
+    <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"genre-select"}) %>
+    <%= f.submit "投稿する" ,class:"btn" %>
+  </div>
+<% end %>

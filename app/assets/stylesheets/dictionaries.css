@@ -1,18 +1,19 @@
 .wrapper {
   display: flex;
+  width: 100vw;
 }
 
 
 
-.side-bar{
+/*.side-bar{
   background-color: rgb(134, 200, 223);
   width: 300px;
   height: 100vh;
 }
 
-.addition {
+/*.addition {
   padding: 60px 0 60px 60px;
-}
+}*/
 
 .purchase-btn {
   width: 200px;
@@ -45,7 +46,9 @@
 
 .main-bar {
   background-color: aliceblue;
-  width: calc(100vw - 300px);
+  width: 100vw;
+  height: 100vh;
+
   overflow: scroll;  
 }
 
@@ -64,28 +67,102 @@
   margin-top: 10px;
 }
 
-.upper-dictionary {
+.lists-dictionary {
   display: flex;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  justify-content: left;
 }
 
-.date-dictionary {
-  color: #999;
-  font-size: 12px;
-  padding-left: 30px;
-  padding-right: 40px;
+.list-dictionary {
+  padding: 30px 30px;
+  font-size: 30px;
 }
 
-.category-dictionary {
+.uppers-dictionary {
+  display: flex;
+  justify-content: left;
+}
+
+.upper-dictionary {
   color: black;
-  font-size: 12px;
-  padding-left: 60px;
-}
-
-.title-dictionary {
-  color: black;
+  padding: 10px 30px;
   font-size: 20px;
-  margin-bottom: 40px;
-  margin-left: 40px;
+  width: 200px;
+
+}
+
+.question-show {
+  background-color: rgb(194, 221, 245);
+  width: 100%;
+}
+
+.question-title {
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+}
+
+.question-lists{
+  display: flex;
+  justify-content: left;
+}
+
+.question-list{
+  padding: 30px 30px;
+  font-size: 30px;
+}
+
+
+/*ここからshowアクションのcss*/
+.top-show {
+  background-color: aliceblue;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+}
+
+.second-show{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-show {
+  width: 600px;
+  font-size: 30px;
+ 
+
+  text-align: center;
+  
+}
+
+.category-show{
+  font-size: 30px;
+  padding: auto;
+  width: 500px;
+
+  text-align: center;
+  margin-top: 30px;
+}
+
+.text-show{
+  font-size: 20px;
+  height: 800px;
+  width: 600px;
+  border: solid black;
+  margin-top: 30px;
+  overflow: scroll;
+}
+
+.change-show {
+  display: flex;
+}
+
+.edit-show {
+  padding: 20px;
+}
+
+.delete-show {
+  padding: 20px;
 }
