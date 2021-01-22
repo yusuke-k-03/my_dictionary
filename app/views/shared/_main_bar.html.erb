@@ -13,16 +13,17 @@
   </div>
   </div>
 
-  <% @dictionaries.each do |dictionary| %>
+  <%# @dictionaries.each do |dictionary| %>
+    <div class = "uppers-dictionary">
     <div class = "upper-dictionary">
-    <div class = "category-dictionary">
-    <%= dictionary.category.name %>
+    <%#= dictionary.category.name %>
+    質問コーナーの実装
     </div>
-    <div class = "date-dictionary">
-    <%= dictionary.created_at %>
+    <div class = "upper-dictionary">
+    <%#= dictionary.created_at %>
     </div>
-    <%= link_to dictionary.title, dictionary_path(dictionary.id), class: "title-dictionary" %>
+    <%#= link_to dictionary.title, dictionary_path(dictionary.id), class: "upper-dictionary" %>
   </div>
-<% end %>
+<% #end %>
  
 </div>

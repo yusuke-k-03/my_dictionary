@@ -7,4 +7,6 @@ class User < ApplicationRecord
          with_options presence: true do
           validates :name
          end
+         
+         has_many :dictionaries
 end

@@ -1,4 +1,6 @@
 class DictionariesController < ApplicationController
+  before_action :authenticate_user!, except: :index
+
   def index
     @dictionaries = Dictionary.order("dictionaries.created_at DESC")
   end
@@ -10,7 +12,7 @@ class DictionariesController < ApplicationController
   def create
     @dictionary = Dictionary.new(dictionary_params)
     if @dictionary.save
-      redirect_to root_path
+      redirect_to "/users/#{current_user.id}"
     else
       render :new
     end
@@ -34,16 +36,26 @@ class DictionariesController < ApplicationController
   end
 
   def destroy
-    dictionary = Dictionary.find(params[:id])
-    dictionary.destroy
-    redirect_to root_path
+  
+       dictionary = Dictionary.find(params[:id])
+
+       if dictionary.user_id == current_user.id
+       if dictionary.destroy
+          redirect_to root_path
+       else
+        render :index
+       end
+      else
+        render :index
+      end
+  
   end
 
 
   private
   
   def dictionary_params
-    params.require(:dictionary).permit(:title, :text, :category_id)
+    params.require(:dictionary).permit(:title, :text, :category_id).merge(user_id: current_user.id)
   end
 
 end

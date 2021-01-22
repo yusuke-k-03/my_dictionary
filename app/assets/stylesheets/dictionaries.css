@@ -77,31 +77,19 @@
   font-size: 30px;
 }
 
-.upper-dictionary {
+.uppers-dictionary {
   display: flex;
   justify-content: left;
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
 
-.date-dictionary {
-  color: #999;
-  font-size: 20px;
-
-}
-
-.category-dictionary {
+.upper-dictionary {
   color: black;
+  padding: 10px 30px;
   font-size: 20px;
 
 }
 
-.title-dictionary {
-  color: black;
-  font-size: 20px;
-  margin-bottom: 40px;
-  margin-left: 40px;
-}
+
 
 /*ここからshowアクションのcss*/
 .top-show {

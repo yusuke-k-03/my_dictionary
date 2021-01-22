@@ -1,0 +1,51 @@
+<%= render "shared/header" %>
+
+<div calss = "dictionary">
+
+<div class = "wrapper">
+
+
+    <div class = "main-bar">
+          <div class = "search">
+          <div class = "search-form">
+          検索機能の実装
+          </div>
+      </div>
+
+
+  <div class = "lists-dictionary">
+  <div class = "list-dictionary">
+  カテゴリー
+  </div>
+  <div class = "list-dictionary">
+  投稿日時
+  </div>
+  <div class = "list-dictionary">
+  タイトル
+  </div>
+  </div>
+
+  <% @dictionaries.each do |dictionary| %>
+    <div class = "uppers-dictionary">
+    <div class = "upper-dictionary">
+    <%= dictionary.category.name %>
+    </div>
+    <div class = "upper-dictionary">
+    <%= dictionary.created_at %>
+    </div>
+    <%= link_to dictionary.title, dictionary_path(dictionary.id), class: "upper-dictionary" %>
+  </div>
+<% end %>
+ 
+</div>
+
+<div class = "addition">
+    <%= link_to(new_dictionary_path, class: 'purchase-btn') do %>
+     <span class='purchase-btn-text'>辞書に追加</span>
+     <%= image_tag 'book_fusen_yoko.png' , size: '0x150' ,class: "purchase-btn-icon" %>
+   <% end %>
+    </div>
+</div>
+
+</div>
+</div>
