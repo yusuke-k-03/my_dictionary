@@ -86,9 +86,29 @@
   color: black;
   padding: 10px 30px;
   font-size: 20px;
+  width: 200px;
 
 }
 
+.question-show {
+  background-color: rgb(194, 221, 245);
+  width: 100%;
+}
+
+.question-title {
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+}
+
+.question-lists{
+  display: flex;
+  justify-content: left;
+}
+
+.question-list{
+  padding: 30px 30px;
+  font-size: 30px;
+}
 
 
 /*ここからshowアクションのcss*/

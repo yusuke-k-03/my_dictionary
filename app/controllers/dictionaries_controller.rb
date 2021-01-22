@@ -1,8 +1,9 @@
 class DictionariesController < ApplicationController
   before_action :authenticate_user!, except: :index
+  before_action :dictionary_set, only: [:show, :edit, :update, :destroy]
 
   def index
-    @dictionaries = Dictionary.order("dictionaries.created_at DESC")
+    @dictionaries = Dictionary.order('dictionaries.created_at DESC')
   end
 
   def new
@@ -19,43 +20,40 @@ class DictionariesController < ApplicationController
   end
 
   def show
-    @dictionary = Dictionary.find(params[:id])
   end
 
   def edit
-    @dictionary = Dictionary.find(params[:id])
   end
 
   def update
-    @dictionary = Dictionary.find(params[:id])
     if @dictionary.update(dictionary_params)
-      redirect_to root_path
+      redirect_to user_path
     else
       render :edit
     end
   end
 
   def destroy
-  
-       dictionary = Dictionary.find(params[:id])
+    dictionary = Dictionary.find(params[:id])
 
-       if dictionary.user_id == current_user.id
-       if dictionary.destroy
-          redirect_to root_path
-       else
-        render :index
-       end
+    if dictionary.user_id == current_user.id
+      if dictionary.destroy
+        redirect_to user_path
       else
         render :index
       end
-  
+    else
+      render :index
+    end
   end
 
-
   private
-  
+
   def dictionary_params
     params.require(:dictionary).permit(:title, :text, :category_id).merge(user_id: current_user.id)
   end
 
+  def dictionary_set
+    @dictionary = Dictionary.find(params[:id])
+  end
 end
