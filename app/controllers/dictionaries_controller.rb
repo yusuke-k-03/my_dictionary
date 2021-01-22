@@ -1,6 +1,6 @@
 class DictionariesController < ApplicationController
   before_action :authenticate_user!, except: :index
-  before_action :dictionary_set, only: [:show, :edit, :update, :destroy]
+  before_action :dictionary_set, only: [:show, :edit, :update]
 
   def index
     @dictionaries = Dictionary.order('dictionaries.created_at DESC')

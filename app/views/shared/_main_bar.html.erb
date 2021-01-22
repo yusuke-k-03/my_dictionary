@@ -21,7 +21,7 @@
     <div class = "upper-question">
     <%= question.created_at %>
     </div>
-    <%= link_to question.title, "#", class: "upper-questions" %>
+    <%= link_to question.title, question_path(question.id), method: :get, class: "upper-questions" %>
 
   </div>
 <% end %>
