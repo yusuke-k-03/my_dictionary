@@ -4,6 +4,7 @@ class DictionariesController < ApplicationController
 
   def index
     @dictionaries = Dictionary.order('dictionaries.created_at DESC')
+    @questions = Question.order('questions.created_at DESC')
   end
 
   def new

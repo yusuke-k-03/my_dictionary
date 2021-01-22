@@ -50,6 +50,20 @@
         </div>  
       </div>
 
+      <% @questions.each do |question| %>
+        <div class = "uppers-dictionary">
+          <div class = "upper-dictionary">
+            <%= question.category.name %>
+          </div>
+
+          <%= link_to question.title, "#", class: "upper-dictionary" %>
+              <div class = "upper-dictionary">
+                 きたよ
+              </div>
+   
+       </div>
+     <% end %>
+
 
   
     </div>

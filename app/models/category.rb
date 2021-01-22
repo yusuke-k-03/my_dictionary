@@ -18,4 +18,5 @@ class Category < ActiveHash::Base
 
   include ActiveHash::Associations
   has_many :dictionaries
+  has_many :questions
 end

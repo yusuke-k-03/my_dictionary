@@ -90,6 +90,40 @@
 
 }
 
+/*ここから質問表示*/
+
+.lists-question {
+  display: flex;
+  justify-content: left;
+}
+
+.list-question {
+  padding: 30px 60px 30px 150px;
+  font-size: 30px;
+}
+
+
+.uppers-question {
+  display: flex;
+  justify-content: center;
+}
+
+.upper-question {
+  color: black;
+  padding: 10px 30px;
+  font-size: 20px;
+  width: 300px;
+}
+
+.upper-questions {
+  color: black;
+  padding: 10px 0 10px 100px;
+  font-size: 20px;
+  width: 400px;
+}
+
+/*ここまで質問表示*/
+
 .question-show {
   background-color: rgb(194, 221, 245);
   width: 100%;
