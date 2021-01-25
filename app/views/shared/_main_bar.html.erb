@@ -1,29 +1,29 @@
 <div calss = "dictionary">
 
 
-  <div class = "lists-dictionary">
-  <div class = "list-dictionary">
+  <div class = "lists-question">
+  <div class = "list-question">
   カテゴリー
   </div>
-  <div class = "list-dictionary">
+  <div class = "list-question">
   投稿日時
   </div>
-  <div class = "list-dictionary">
+  <div class = "list-question">
   タイトル
   </div>
   </div>
 
-  <%# @dictionaries.each do |dictionary| %>
-    <div class = "uppers-dictionary">
-    <div class = "upper-dictionary">
-    <%#= dictionary.category.name %>
-    質問コーナーの実装
+  <% @questions.each do |question| %>
+    <div class = "uppers-question">
+    <div class = "upper-question">
+    <%= question.category.name %>
     </div>
-    <div class = "upper-dictionary">
-    <%#= dictionary.created_at %>
+    <div class = "upper-question">
+    <%= question.created_at %>
     </div>
-    <%#= link_to dictionary.title, dictionary_path(dictionary.id), class: "upper-dictionary" %>
+    <%= link_to question.title, question_path(question.id), method: :get, class: "upper-questions" %>
+
   </div>
-<% #end %>
+<% end %>
  
 </div>

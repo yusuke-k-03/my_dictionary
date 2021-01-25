@@ -8,7 +8,7 @@
     <div class = "main-bar">
       <div class = "search">
         <div class = "search-form">
-           検索機能の実装
+           私の自引き
          </div>
       </div>
 
@@ -36,7 +36,7 @@
     </div>
     <div class = "question-show">
       <div class = question-title>
-        自分がした質問（タイトル）
+        私の質問
       </div>
       <div class = "question-lists">
         <div class = "question-list">
@@ -49,6 +49,24 @@
           コメント有無
         </div>  
       </div>
+
+      <% @questions.each do |question| %>
+        <div class = "uppers-dictionary">
+          <div class = "upper-dictionary">
+            <%= question.category.name %>
+          </div>
+
+               <%= link_to question.title, question_path(question.id), class: "upper-dictionary" %>
+
+              
+              <div class = "upper-dictionary">
+              <% if @answer.question_id == question.id  %>
+                 きたよ
+              <% end %>  
+              </div>
+    
+        </div>
+     <% end %>
 
 
   
