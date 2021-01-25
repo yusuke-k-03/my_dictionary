@@ -56,12 +56,16 @@
             <%= question.category.name %>
           </div>
 
-          <%= link_to question.title, question_path(question.id), class: "upper-dictionary" %>
+               <%= link_to question.title, question_path(question.id), class: "upper-dictionary" %>
+
+              
               <div class = "upper-dictionary">
+              <% if @answer.question_id == question.id  %>
                  きたよ
+              <% end %>  
               </div>
-   
-       </div>
+    
+        </div>
      <% end %>
 
 

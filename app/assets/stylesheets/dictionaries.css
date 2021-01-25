@@ -125,7 +125,7 @@
   width: 400px;
 }
 
-/*ここまで質問表示*/
+
 
 .question-show {
   background-color: rgb(194, 221, 245);
@@ -150,12 +150,69 @@
   font-size: 30px;
 }
 
+/*ここまで質問表示*/
+
+/*ここから回答表示*/
+.answer-title {
+  font-size: 30px;
+  margin-top: 30ox;
+  margin-bottom: 30px;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.answer-text{
+  margin-top: 40px;
+  height: 200px;
+  width: 400px;
+  overflow: scroll;
+}
+
+.answer-btn {
+  height: 50px;
+  width: 100px;
+  margin-top: 30px;
+  margin-left: auto;
+}
+
+.answers-user {
+  display: flex;
+  flex-direction: column;
+}
+
+.answer-users {
+  display: flex;
+  margin-top: 20px;
+}
+
+.answer-user {
+  font-size: 20px;
+  margin-right: 20px;
+  height: 60px;
+  width: 40px;
+
+}
+
+.answer-texts{
+  font-size: 15px;
+  padding-left: 20px;
+  height: 60;
+  width: 400px;
+  border: black solid;
+}
+
+
+/*ここまで回答表示*/
 
 /*ここからshowアクションのcss*/
 .top-show {
   background-color: aliceblue;
   display: flex;
-  height: 100vh;
+  height: 130%;
   width: 100vw;
   justify-content: center;
 }
@@ -196,7 +253,7 @@
 }
 
 .change-show {
-  display: flex;
+  
 }
 
 .edit-show {

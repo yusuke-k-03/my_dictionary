@@ -16,6 +16,8 @@ class QuestionsController < ApplicationController
   end
 
   def show
+    @answer = Answer.new
+    @answers = @question.answers.includes(:user)
   end
 
   def edit
@@ -33,7 +35,7 @@ class QuestionsController < ApplicationController
       render :index
     end
   end
-  
+
   private
 
   def question_params
@@ -43,7 +45,4 @@ class QuestionsController < ApplicationController
   def question_set
     @question = Question.find(params[:id])
   end
-
-
-
 end

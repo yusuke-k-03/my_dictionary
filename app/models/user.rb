@@ -10,4 +10,5 @@ class User < ApplicationRecord
 
   has_many :dictionaries
   has_many :questions
+  has_many :answers
 end
