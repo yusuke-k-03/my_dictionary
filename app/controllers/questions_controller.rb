@@ -1,5 +1,5 @@
 class QuestionsController < ApplicationController
-  before_action :authenticate_user!
+
   before_action :question_set, only: [:show, :edit, :update]
 
   def new
@@ -11,7 +11,7 @@ class QuestionsController < ApplicationController
     if @question.valid?
       redirect_to root_path
     else
-      render new
+      render :new
     end
   end
 
@@ -21,6 +21,15 @@ class QuestionsController < ApplicationController
   end
 
   def edit
+  end
+
+  def update
+    @question = Question.find(params[:id])
+    if @question.update(question_params)
+      redirect_to root_path
+    else
+      render :show
+    end
   end
 
   def destroy

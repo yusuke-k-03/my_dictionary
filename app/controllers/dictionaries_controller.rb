@@ -48,6 +48,13 @@ class DictionariesController < ApplicationController
     end
   end
 
+  def search
+    @user_dictionary = Dictionary.where(user_id: current_user.id)
+    @dictionaries = @user_dictionary.search(params[:keyword])  
+  end
+
+ 
+
   private
 
   def dictionary_params
@@ -57,4 +64,5 @@ class DictionariesController < ApplicationController
   def dictionary_set
     @dictionary = Dictionary.find(params[:id])
   end
+
 end
