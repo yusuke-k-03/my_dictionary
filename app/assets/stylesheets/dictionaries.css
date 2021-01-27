@@ -17,7 +17,7 @@
 
 .purchase-btn {
   width: 200px;
-  background: #3ccace;
+  background: #c0eaf7;
   text-align: center;
   border-radius: 4%;
   bottom: 32px;
@@ -27,7 +27,7 @@
 }
 
 .purchase-btn-text {
-  color: #fff;
+  color: rgb(65, 65, 65);
   display: block;
   font-size: 18px;
   text-decoration: none;
@@ -35,7 +35,7 @@
 }
 
 .purchase-btn-icon {
-  width: 60%;
+  width: 100%;
 }
 
 
@@ -45,7 +45,7 @@
 }
 
 .main-bar {
-  background-color: aliceblue;
+  background-color: rgb(230, 246, 255);
   width: 100vw;
   height: 100vh;
 
@@ -115,7 +115,7 @@
   color: black;
   padding: 10px 30px;
   font-size: 20px;
-  width: 300px;
+  width: 400px;
 }
 
 .upper-questions {
@@ -128,7 +128,7 @@
 
 
 .question-show {
-  background-color: rgb(194, 221, 245);
+  background-color: rgb(235, 244, 252);
   width: 100%;
 }
 
@@ -252,9 +252,7 @@
   overflow: scroll;
 }
 
-.change-show {
-  
-}
+
 
 .edit-show {
   padding: 20px;

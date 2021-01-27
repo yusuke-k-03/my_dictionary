@@ -1,0 +1,15 @@
+ja:
+ activerecord:
+   attributes:
+     user:
+       nickname: ニックネーム
+     question:
+       text: テキスト
+       title: タイトル
+       category_id: カテゴリー 
+     dictionary:
+       title: タイトル
+       text: テキスト
+       category_id: カテゴリー
+     answer:
+       text: テキスト

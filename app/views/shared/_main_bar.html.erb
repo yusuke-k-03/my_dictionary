@@ -19,7 +19,7 @@
     <%= question.category.name %>
     </div>
     <div class = "upper-question">
-    <%= question.created_at %>
+    <%= question.created_at.to_s(:datetime_jp) %>
     </div>
     <%= link_to question.title, question_path(question.id), method: :get, class: "upper-questions" %>
 
