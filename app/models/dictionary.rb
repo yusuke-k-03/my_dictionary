@@ -8,9 +8,10 @@ class Dictionary < ApplicationRecord
 
   def self.search(search)
     if search != ""
-      Dictionary.where('text LIKE(?)',"%#{search}%")
+         Dictionary.where('title LIKE(?)',"%#{search}%")
     else
       Dictionary.order('dictionaries.created_at DESC')
     end
   end
+
 end

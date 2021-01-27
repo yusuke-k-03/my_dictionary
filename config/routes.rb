@@ -3,14 +3,16 @@ Rails.application.routes.draw do
   get 'dictionaries/index'
   root to: "dictionaries#index"
   resources :dictionaries do
-  collection do
-    get 'search'
+    collection do
+      get 'search'
+    end
   end
+ 
 
-  end
+  
   resources :questions do
     resources :answers, only: :create
   end
-  resources :users, only: :show
+  resources :users, only: :show 
   
 end

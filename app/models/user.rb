@@ -11,4 +11,13 @@ class User < ApplicationRecord
   has_many :dictionaries
   has_many :questions
   has_many :answers
+
+  def self.search(search)
+    if search != ""
+      Dictionary.where('text LIKE(?)',"%#{search}%")
+    else
+      Dictionary.order('dictionaries.created_at DESC')
+    end
+  end
+
 end

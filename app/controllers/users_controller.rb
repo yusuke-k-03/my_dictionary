@@ -8,4 +8,11 @@ class UsersController < ApplicationController
     @questions = current_user.questions.order('questions.created_at DESC')
     
   end
+
+
+
+
+
+
+
 end
