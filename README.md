@@ -13,13 +13,8 @@
 https://my-dictionary-33022.herokuapp.com/
 
 ログイン情報（テスト用）
-<<<<<<< Updated upstream
-- Eメール：
-- パスワード
-=======
 - Eメール：test@test
 - パスワード:test11
->>>>>>> Stashed changes
 
 ## 制作背景
 自分自身が今回プログラミングを学んでいく中で、わからないことを見つけるととりあえずメモ帳に貼り付けるということを繰り返していました。
@@ -35,21 +30,14 @@ https://my-dictionary-33022.herokuapp.com/
 マイページ
 
 ## 工夫したとろこ
-<<<<<<< Updated upstream
-・マイページのみの表示とログイン時のみの表示を分けたことです
-
-## 課題や今後実装したい機能
-・フォロー機能
-・質問に対して返答が来た際のアラーム通知
-・カテゴリーを選ぶのではなく自分で作る
-=======
+<
 -マイページのみの表示とログイン時のみの表示を分けたことです
 
 ## 課題や今後実装したい機能
 - フォロー機能
 - 質問に対して返答が来た際のアラーム通知
 - カテゴリーを選ぶのではなく自分で作る
->>>>>>> Stashed changes
+
 
 
 ## usersテーブル
@@ -72,9 +60,4 @@ https://my-dictionary-33022.herokuapp.com/
 
 ### association
 - belongs_to :user
-<<<<<<< Updated upstream
 
-
-
-=======
->>>>>>> Stashed changes
