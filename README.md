@@ -1,27 +1,43 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## アプリ名
+<h1>私の辞書</h1>
 
-Things you may want to cover:
+##  概要
+本アプリは自分の学習する効率を上げるために作成いたしました。
+基本的なアプリの使用はマイページで自身が学んだ内容を記録していき、私の辞書を作り上げていくアプリです。
 
-* Ruby version
+またトップページからわからないことを質問することができ、ログインしているユーザーであればそれに回答することができます。
 
-* System dependencies
+## 本番環境
+https://my-dictionary-33022.herokuapp.com/
 
-* Configuration
+ログイン情報（テスト用）
+- Eメール：
+- パスワード
 
-* Database creation
+## 制作背景
+自分自身が今回プログラミングを学んでいく中で、わからないことを見つけるととりあえずメモ帳に貼り付けるということを繰り返していました。
+それを続けていくとどこに何を保存したかわからなくなってしまうため、「検索機能」が欲しいというところから辞書を作ろうと考えました。
+また学習で使用いてた「Qiita」がとても便利なのだと感じ、「質問投稿機能」「返答機能」をつけることを考え、
+私の辞書を制作いたしました。
 
-* Database initialization
+## DEMO
+トップページ
 
-* How to run the test suite
+新規登録画面
 
-* Services (job queues, cache servers, search engines, etc.)
+マイページ
 
-* Deployment instructions
+## 工夫したとろこ
+・マイページのみの表示とログイン時のみの表示を分けたことです
 
-* ...
+## 課題や今後実装したい機能
+・フォロー機能
+・質問に対して返答が来た際のアラーム通知
+・カテゴリーを選ぶのではなく自分で作る
+
+
 ## usersテーブル
 
 | colum   | type    | options      
@@ -42,9 +58,3 @@ Things you may want to cover:
 
 ### association
 - belongs_to :user
-
-|----------------------------------------------------------
-## 今後実装予定
-・フォローのさいのテーブル
-・コメントテーブル
-
