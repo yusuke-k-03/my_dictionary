@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
-  get 'dictionaries/index'
   root to: "dictionaries#index"
+  get 'dictionaries/index'
+  
   resources :dictionaries do
     collection do
       get 'search'
