@@ -4,7 +4,7 @@ FactoryBot.define do
     category_id           { 2 }
     text                  { "これはテストです" }
     association :user
-    association :dictionary
+
     
   end
 end
