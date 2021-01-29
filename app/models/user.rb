@@ -11,7 +11,7 @@ class User < ApplicationRecord
   has_many :dictionaries
   has_many :questions
   has_many :answers
-  has_many :like
+  has_many :likes
 
   def self.search(search)
     if search != ""
@@ -19,6 +19,10 @@ class User < ApplicationRecord
     else
       Dictionary.order('dictionaries.created_at DESC')
     end
+  end
+
+  def liked_by?(answer_id)
+    likes.where(answer_id: answer_id).exists?
   end
 
 end
