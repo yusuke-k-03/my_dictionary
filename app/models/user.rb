@@ -11,6 +11,7 @@ class User < ApplicationRecord
   has_many :dictionaries
   has_many :questions
   has_many :answers
+  has_many :like
 
   def self.search(search)
     if search != ""
