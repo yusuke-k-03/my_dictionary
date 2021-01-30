@@ -35,11 +35,9 @@
          <div class = "answer-title">回答一覧</div>
            <div class = "answers-user">
              <% @answers.each do |answer| %>
-             <% if current_user.liked_by?(answer.id) %>
-             <td><%= link_to 'いいねを外す', destroy_like_path(answer), method: :DELETE %> <%= answer.likes.count %> </td>
-             <% else %>
-             <td><%= link_to 'いいね', create_like_path(answer), method: :POST %> <%= answer.likes.count %></td>
-             <% end %>
+            <div id = "answer_<%= answer.id %>">
+             <%= render 'answers/answer', {answer: answer} %>
+              </div>
                <div class = "answer-users">
                  <div class = "answer-user">
                     <%= answer.user.name %>

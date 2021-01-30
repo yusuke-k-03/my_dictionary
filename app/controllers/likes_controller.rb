@@ -1,12 +1,22 @@
 class LikesController < ApplicationController
+  before_action :answer_params
+
   def create
+
     Like.create(user_id: current_user.id, answer_id: params[:id])
-    redirect_to root_path
+ 
   end
 
   def destroy
+
     Like.find_by(user_id: current_user.id, answer_id: params[:id]).destroy
-    redirect_to root_path
+   
   end
+
+  private
+
+  def answer_params
+    @answer = Answer.find(params[:id])
+  end 
 
 end
