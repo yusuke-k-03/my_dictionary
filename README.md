@@ -12,6 +12,13 @@
 カテゴリー、タイトル、テキストを送信して質問可能です
 ログインしているユーザーであればそれに回答することができます。
 
+## 開発環境
+Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello
+- Railsのバージョン 6.0.0
+- MySQLのバージョン 5.5.8
+- Gitのバージョン 2.24.3
+- Herokuのバージョン 7.47.11
+
 ## 本番環境
 https://my-dictionary-33022.herokuapp.com/
 
