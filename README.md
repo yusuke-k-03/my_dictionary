@@ -11,6 +11,7 @@
 またトップページからわからないことを質問することができ、辞書同様
 カテゴリー、タイトル、テキストを送信して質問可能です
 ログインしているユーザーであればそれに回答することができます。
+<<<<<<< HEAD
 
 ## 開発環境
 Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello
@@ -18,6 +19,8 @@ Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello
 - MySQLのバージョン 5.5.8
 - Gitのバージョン 2.24.3
 - Herokuのバージョン 7.47.11
+=======
+>>>>>>> 6faf42b464f6275c36a2f66a51c1129f84a6db14
 
 ## 本番環境
 https://my-dictionary-33022.herokuapp.com/
@@ -103,3 +106,7 @@ https://my-dictionary-33022.herokuapp.com/
 - belongs_to :user
 - belongs_to :answer
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6faf42b464f6275c36a2f66a51c1129f84a6db14
