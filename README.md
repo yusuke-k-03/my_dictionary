@@ -91,6 +91,10 @@ https://my-dictionary-33022.herokuapp.com/
 - 質問に対して返答が来た際のアラーム通知
 - カテゴリーを選ぶのではなくユーザー自身で入力して作成する
 
+## データベース
+
+#### ER図
+![dictionary](https://user-images.githubusercontent.com/75667929/106585029-3d1af080-658a-11eb-9100-208ec665113b.png)
 
 
 ## usersテーブル
