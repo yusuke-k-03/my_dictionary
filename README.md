@@ -39,7 +39,8 @@ https://my-dictionary-33022.herokuapp.com/
 
 ## DEMO
 ### トップページ
-![toppage.png](https://github.com/yusuke-k-03/my_dictionary/tree/master/image/toppage.png)
+![toppage](https://user-images.githubusercontent.com/75667929/106576278-4d2dd280-6580-11eb-8564-7619a3758567.png)
+
 ### マイページ
 ### 投稿画面
 ### 回答・いいね画面
