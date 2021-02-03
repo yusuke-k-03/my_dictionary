@@ -48,14 +48,16 @@ https://my-dictionary-33022.herokuapp.com/
 「新しい質問」をクリックすると投稿画面に遷移します。  
 
 #### トップページ②
-![logout](https://user-images.githubusercontent.com/75667929/106578386-cb8b7400-6582-11eb-9480-29e922e744d2.png)
+![logouts](https://user-images.githubusercontent.com/75667929/106681916-ca9b2680-6604-11eb-8ac4-21c1cae41d6e.png)
+
+
 
 ログアウト済のトップページです  
 「新規登録」をクリックするとユーザーの新規登録画面に遷移します。  
 「新しい質問」はログインしないと表示されません  
 
 #### マイページ
-![my](https://user-images.githubusercontent.com/75667929/106578437-d9d99000-6582-11eb-93dc-75e987e0c43b.png)
+![my-s](https://user-images.githubusercontent.com/75667929/106682021-fc13f200-6604-11eb-9d3d-7196085802a1.png)
 
 マイページです  
 私の自引きのタイトルにあたるものをクリックすると投稿した内容の詳細ページに遷移します。  
